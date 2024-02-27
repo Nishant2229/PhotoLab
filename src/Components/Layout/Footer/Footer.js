@@ -7,23 +7,12 @@ const Footer = () => {
       <div className={classes.footerContainer}>
         <div className={classes.footerLinks}>
           <p className={classes.footerText}>
-            © {new Date().getFullYear()} Developed by Vivek Raut
+            © {new Date().getFullYear()} Developed by Nishant Sahu
           </p>
         </div>
         <div className={classes.socialIcons}>
           <a
-            href="https://www.instagram.com/thevivekraut/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={classes.socialIcon}
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png"
-              alt="Instagram"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/thevivekraut"
+            href="https://www.linkedin.com/in/nishant-sahu-398206228/"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.socialIcon}
@@ -34,7 +23,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://github.com/DevloperVivek"
+            href="https://github.com/Nishant2229"
             target="_blank"
             rel="noopener noreferrer"
             className={classes.socialIcon}

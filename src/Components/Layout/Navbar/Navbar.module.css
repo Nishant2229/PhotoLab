@@ -1,0 +1,133 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbarGlass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #f2c94c;
+}
+
+.exploreUploadAccount {
+  margin-left: auto;
+  display: flex;
+}
+
+.exploreUploadAccount .navLink {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(34, 49, 63, 0.8);
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navLinks.mobileMenuOpen {
+    transform: translateY(0);
+  }
+
+  .mobileMenuIcon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .navLink {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bar {
+    width: 20px;
+  }
+}
